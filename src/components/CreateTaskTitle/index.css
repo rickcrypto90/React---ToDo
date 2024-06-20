@@ -1,0 +1,23 @@
+.createTaskWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .createTaskTitle {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .createTaskPlus {
+    height: 40px;
+    width: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 50%;
+    background: black;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
