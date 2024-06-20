@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import CreateTaskTitle from "./components/CreateTaskTitle";
-import Columns from "./components/Columns";
+
 import Column from "./components/Column";
 import Modal from "./components/Modal";
 import "./App.css";
@@ -14,7 +14,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <CreateTaskTitle setShowModal={setShowModal} />
-        <Columns>
+        <div className="columns">
           <Column
             title="Todo"
             tasks={tasks.filter((task) => task.Status === "todo")}
@@ -24,7 +24,7 @@ const App = () => {
             title="Done"
             tasks={tasks.filter((task) => task.Status === "done")}
           />
-        </Columns>
+        </div>
         {showModal && (
           <Modal
             tasks={tasks}
