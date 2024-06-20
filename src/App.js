@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-
-import CreateTaskTitle from "./components/CreateTaskTitle";
-
-import Column from "./components/Column";
-import Modal from "./components/Modal";
+import { Column, CreateTaskTitle, Modal } from "./components";
 import "./App.css";
 
 const App = () => {
